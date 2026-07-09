@@ -48,7 +48,6 @@
 .cs-sns-row{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #e0e8f4;border-radius:14px;padding:16px 20px}
 .cs-sns-badge{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;flex:none}
 .cs-fb{background:#1877f2;color:#fff;font-size:22px}
-.cs-kakao{background:#fae100;color:#3a2e00;font-size:11px}
 .cs-sns-label{font-size:16px;font-weight:600;color:#42506b;min-width:96px}
 .cs-sns-sep{width:1px;height:26px;background:#e0e8f4}
 .cs-sns-value{font-size:19px;font-weight:800;color:#12235a}

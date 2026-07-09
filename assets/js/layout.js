@@ -27,7 +27,6 @@
     '<symbol id="ic-match" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3"/><path d="M3.5 19c0-3.2 2.5-5 5.5-5s5.5 1.8 5.5 5"/><path d="M16 6.5a3 3 0 010 6"/><path d="M15.5 14.2c2.6 0 4 1.9 4 4.8"/></symbol>',
     '<symbol id="ic-globe" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><line x1="4" y1="12" x2="20" y2="12"/><path d="M12 4c2.6 2.6 2.6 13.4 0 16"/><path d="M12 4c-2.6 2.6-2.6 13.4 0 16"/></symbol>',
     '<symbol id="ic-phone" viewBox="0 0 24 24"><path d="M6 4h3l1.6 4.5-2 1.4a11 11 0 004.9 4.9l1.4-2L20 15v3a1.5 1.5 0 01-1.6 1.5A15.5 15.5 0 014.5 5.6 1.5 1.5 0 016 4z"/></symbol>',
-    '<symbol id="ic-chat" viewBox="0 0 24 24"><path d="M5 6h14a1.5 1.5 0 011.5 1.5v6A1.5 1.5 0 0119 15H10l-4 3v-3H5a1.5 1.5 0 01-1.5-1.5v-6A1.5 1.5 0 015 6z"/></symbol>',
     '<symbol id="ic-chat-users" viewBox="0 0 24 24"><circle cx="9" cy="9" r="3"/><path d="M3.5 19c0-3.2 2.5-5 5.5-5s5.5 1.8 5.5 5"/><path d="M15 5.5a3 3 0 010 6"/><path d="M16 14c2.4 0 3.8 1.8 3.8 4.6"/></symbol>',
     '<symbol id="ic-headset" viewBox="0 0 24 24"><path d="M5 13v-1a7 7 0 0114 0v1"/><path d="M4.5 13.5A1.5 1.5 0 016 12h1v6H6a1.5 1.5 0 01-1.5-1.5z"/><path d="M19.5 13.5A1.5 1.5 0 0018 12h-1v6h1a1.5 1.5 0 001.5-1.5z"/></symbol>',
     '<symbol id="ic-camera" viewBox="0 0 24 24"><path d="M4 8.5h3L8.4 6h7.2L17 8.5h3a1 1 0 011 1V18a1 1 0 01-1 1H4a1 1 0 01-1-1V9.5a1 1 0 011-1z"/><circle cx="12" cy="13" r="3.4"/></symbol>',

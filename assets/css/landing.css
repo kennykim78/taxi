@@ -18,8 +18,14 @@
 .hero-photo{aspect-ratio:5/4;height:502px;border-radius:22px;overflow:hidden;border:1px solid #cfdaee}
 .hero-photo img{width:100%;height:100%;object-fit:cover}
 
-/* ---------- 30s CTA ---------- */
+/* ---------- 30s CTA + 전화 상담 (가로 배치) ---------- */
 .cta-wrap{padding:0 48px;position:relative;z-index:3;margin-top:-32px}
+.cta-row{display:grid;grid-template-columns:1.7fr 1fr;gap:18px;align-items:stretch}
+/* 전화 상담 카드를 옆의 30초 카드와 같은 높이·모양으로 맞춘다 */
+.cta-call{border-radius:20px;padding:26px 28px;gap:18px;box-shadow:0 18px 42px rgba(18,161,80,.28)}
+.cta-call .consult-icon{width:34px;height:34px}
+.cta-call .consult-ko{font-size:22px;font-weight:800;letter-spacing:-.01em}
+.cta-call .consult-en{font-size:13.5px;margin-top:3px}
 .cta-apply{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(90deg,#e0342a,#c62319);color:#fff;border-radius:20px;padding:26px 34px;box-shadow:0 18px 42px rgba(224,52,42,.32);flex-wrap:wrap}
 .cta-apply-left{display:flex;align-items:center;gap:20px}
 .cta-apply-icon{width:62px;height:62px;border-radius:16px;background:rgba(255,255,255,.18);color:#fff;padding:16px;flex:none}
@@ -121,8 +127,10 @@
   .hero-sub-en{font-size:18px;margin-top:10px}
   .hero-desc{font-size:16px;margin-top:14px}
   .hero-photo{aspect-ratio:16/11}
+  .cta-row{grid-template-columns:1fr;gap:14px}
   .cta-apply{padding:22px 20px;flex-wrap:nowrap} /* 화살표가 줄바꿈되지 않도록 */
   .cta-apply-title{font-size:28px}
+  .cta-call{padding:20px}
   .section-ko{font-size:22px}
   .idphoto{padding:28px}
   .idphoto-title{font-size:22px}
@@ -146,6 +154,9 @@
   .cta-apply-title{font-size:24px}
   .cta-apply-sub{font-size:12px;line-height:1.45}
   .cta-apply-arrow{display:none} /* 카드 전체가 탭 영역이라 화살표는 장식이다 */
+  .cta-call{padding:18px}
+  .cta-call .consult-ko{font-size:19px}
+  .cta-call .consult-en{font-size:12px}
 
   .idphoto{padding:22px}
   .idphoto-title{font-size:20px}
