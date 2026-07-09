@@ -37,14 +37,23 @@ MCP 서버 `claude_design`(user 스코프, `https://api.anthropic.com/v1/design/
 
 ## 지원 폼 전송
 
-30초 지원 모달은 FormSubmit AJAX 엔드포인트로 `phil3410@naver.com` 에 보낸다.
+30초 지원 모달은 FormSubmit AJAX 엔드포인트로 메일을 보낸다.
 엔드포인트는 `assets/js/main.js` 상단 `APPLY_ENDPOINT` 한 곳에만 있다.
+현재는 테스트용 `kenny@rza.co.kr`. **운영 전환 시 `phil3410@naver.com` 으로 되돌릴 것.**
 
-- **최초 1회 활성화 필요**: 실제로 한 번 제출하면 수신함에 확인 메일이 오고, 그 링크를 눌러야 이후 메일이 도착한다.
+- **`file://` 로 열면 항상 실패한다.** FormSubmit 은 `Referer` 헤더를 요구하는데 file 스킴은 보내지 않는다.
+  ("Make sure you open this page through a web server" 응답) 폼 테스트는 반드시 `npx serve .` 로 띄운다.
+- **수신 주소를 바꾸면 최초 1회 활성화가 필요하다.** 한 번 제출하면 확인 메일이 오고 그 링크를 눌러야 한다.
+  (미활성 상태의 응답: `{"success":"false","message":"This form needs Activation..."}`)
 - AJAX 제출에서는 reCAPTCHA 를 못 쓴다(`_captcha:false`). 대신 허니팟(`_honey`)으로 봇을 거른다.
-- `file://` 로 직접 열면 CORS 로 전송이 막힌다. 폼 테스트는 `npx serve .` 로 띄워서 한다.
 - 전송 실패 시 성공 화면 대신 오류 문구를 띄우고 버튼을 되살린다. 성공 화면을 무조건 보여주면 안 된다.
+  실패 원인은 `explainFailure()` 가 콘솔에 구분해 남긴다(file://, 미활성, Referer 문제).
 - FormSubmit 은 대시보드가 없어 **메일이 유실되면 지원자 데이터도 사라진다.** 스팸함 확인이 필요하다.
+
+### 입력 검증
+
+성명은 한글 완성형·영문·공백·`.`·`-`·`·` 만 허용하고 2~30자. 한글 낱자(ㄱ~ㅎ, ㅏ~ㅣ)와 숫자는 오타로 보고 막는다.
+휴대폰번호는 `01[016789]` + 7~8자리. 입력 중 하이픈을 자동으로 넣고(`010-1234-5678`), 뒷자리가 모두 같은 숫자면 막는다.
 
 ### 아직 남은 일
 

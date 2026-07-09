@@ -115,6 +115,8 @@ img{display:block;max-width:100%}
 .field-input-tight{margin:11px 0 6px}
 .field-input::placeholder{color:#9aa6b8}
 .field-input:focus{outline:none;border-color:#1846c9;box-shadow:0 0 0 4px rgba(24,70,201,.12)}
+.field-input.is-invalid{border-color:#e0342a;background:#fff8f7}
+.field-input.is-invalid:focus{border-color:#e0342a;box-shadow:0 0 0 4px rgba(224,52,42,.12)}
 .field-error-slot{min-height:22px;padding:4px 2px 0}
 .field-error{font-size:13.5px;color:#e0342a;font-weight:600}
 /* 봇만 채우는 허니팟. 화면에서 완전히 감추되 display:none 은 피한다. */
