@@ -46,7 +46,7 @@
     '        <input id="applyPhone" name="phone" class="field-input field-input-tight" inputmode="tel" placeholder="휴대폰번호를 입력하세요 / Please enter your mobile phone number" autocomplete="tel">',
     '        <div class="field-error-slot"><span class="field-error" id="applyError" role="alert"></span></div>',
     '        <button type="submit" class="apply-submit">',
-    '          <span class="apply-submit-left"><span class="apply-submit-icon"><svg class="ico"><use href="#ic-send"/></svg></span><span class="apply-submit-ko">무료 상담신청, Apply</span></span>',
+    '          <span class="apply-submit-left"><span class="apply-submit-icon"><svg class="ico"><use href="#ic-send"/></svg></span><span class="apply-submit-ko">무료 상담신청</span></span>',
     '          <span class="apply-submit-sep"></span>',
     '          <span class="apply-submit-en">APPLY</span>',
     '        </button>',

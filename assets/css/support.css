@@ -23,7 +23,7 @@
 
 /* 상담원 사진(배경 투명)은 히어로 하단에 발을 붙이고, 넘치는 부분은 잘린다. */
 .cs-hero-agent{position:relative;align-self:stretch;min-height:220px}
-.cs-hero-agent img{position:absolute;right:0;bottom:0;width:630px;height:420px;max-width:none;object-fit:contain;object-position:bottom center}
+.cs-hero-agent img{position:absolute;right:0;bottom:-60px;width:630px;height:420px;max-width:none;object-fit:contain;object-position:bottom center}
 
 /* ---------- panels ---------- */
 .cs-panel-wrap{padding:24px 48px 8px}
