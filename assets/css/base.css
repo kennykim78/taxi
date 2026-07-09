@@ -1,0 +1,212 @@
+/* 공통: 리셋 / 아이콘 / 헤더 / 푸터 / 상담 버튼 / 지원 모달 */
+
+*{box-sizing:border-box;margin:0;padding:0}
+html{-webkit-text-size-adjust:100%}
+body{font-family:'Pretendard',-apple-system,BlinkMacSystemFont,sans-serif;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+body.nav-open{overflow:hidden}
+a{color:inherit;text-decoration:none}
+a:hover{opacity:.88}
+img{display:block;max-width:100%}
+
+@media (prefers-reduced-motion:reduce){
+  *{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+}
+
+/* 화면에는 숨기고 스크린리더에만 읽히는 텍스트 */
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+.sprite{display:none}
+.ico{width:100%;height:100%;display:block;fill:none;stroke:currentColor;stroke-width:1.7;stroke-linecap:round;stroke-linejoin:round}
+.ico-fill{fill:currentColor;stroke:none}
+
+.page{width:100%;background:#fff;color:#16233d}
+.wrap{max-width:1400px;margin:0 auto;width:100%}
+
+/* ---------- header ---------- */
+.site-header{border-bottom:1px solid #eef1f6;background:#fff}
+.header-inner{padding:20px 48px;display:flex;align-items:center;justify-content:space-between;gap:32px;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:12px}
+.brand-mark{width:50px;height:50px;border-radius:13px;background:#1846c9;color:#fff;padding:12px;flex:none}
+.brand-ko{font-size:21px;font-weight:800;color:#12235a;letter-spacing:-.01em}
+.brand-en{font-size:11px;letter-spacing:.14em;color:#8794a8;font-weight:600}
+.site-nav{display:flex;gap:30px;flex-wrap:wrap}
+.site-nav a{text-align:center}
+.nav-ko{display:block;font-size:15px;font-weight:700;color:#28374f}
+.nav-en{display:block;font-size:10px;letter-spacing:.08em;color:#9aa6b8;font-weight:600}
+.site-nav a.is-active .nav-ko{color:#1846c9}
+
+/* 데스크톱에서는 햄버거·드로어 전용 요소를 숨긴다 */
+.header-actions{display:none}
+.nav-head{display:none}
+.nav-contact{display:none}
+.nav-backdrop{display:none}
+.header-contact{text-align:right}
+.header-tel{display:flex;align-items:center;gap:10px;justify-content:flex-end;color:#1846c9;font-weight:800;font-size:26px;letter-spacing:-.01em}
+.tel-icon{width:24px;height:24px;display:block;flex:none}
+.tel-nums{display:flex;flex-direction:column;align-items:flex-start;line-height:1.12}
+.header-hours{font-size:12.5px;color:#8794a8;margin-top:6px}
+.header-today{font-size:12.5px;color:#e0342a;font-weight:700}
+.header-today span{color:#8794a8;font-weight:500}
+
+/* ---------- section head ---------- */
+.section-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.section-ko{font-size:26px;font-weight:800;color:#12235a}
+.section-en{font-size:15px;color:#8794a8;font-weight:600}
+
+/* ---------- consult buttons ---------- */
+.consult-row{padding-top:18px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%, 240px), 1fr));gap:16px}
+.consult{display:flex;align-items:center;gap:14px;border-radius:14px;padding:18px 20px}
+.consult-call{background:#12a150;color:#fff}
+.consult-kakao{background:#fae100;color:#3a2e00}
+.consult-icon{width:28px;height:28px;display:block;flex:none}
+.consult-ko{display:block;font-size:17px;font-weight:700}
+.consult-en{display:block;font-size:13px;opacity:.9}
+.consult-kakao .consult-en{opacity:.75}
+
+/* ---------- footer ---------- */
+.site-footer{background:#12235a;color:#fff}
+.footer-inner{padding:40px 48px;display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%, 260px), 1fr));gap:28px}
+.footer-col{display:flex;gap:14px}
+.footer-icon{width:42px;height:42px;display:block;background:rgba(255,255,255,.12);border-radius:11px;padding:9px;flex:none;color:#9fc0ff}
+.footer-ko{font-size:16px;font-weight:800}
+.footer-en{font-size:11px;color:#8ea3c9;letter-spacing:.03em}
+.footer-d1{font-size:13px;color:#c3d0e8;margin-top:6px;line-height:1.5}
+.footer-d2{font-size:11px;color:#7f95bd;margin-top:2px;line-height:1.4}
+
+/* ---------- apply modal ---------- */
+@keyframes popIn{0%{transform:scale(.94);opacity:0}100%{transform:scale(1);opacity:1}}
+.modal-overlay{position:fixed;inset:0;z-index:1000;background:rgba(10,20,45,.55);backdrop-filter:blur(3px);display:flex;align-items:flex-start;justify-content:center;padding:32px 16px;overflow:auto}
+.modal-overlay[hidden]{display:none}
+.modal{max-width:720px;width:100%;background:#fff;border-radius:22px;overflow:hidden;box-shadow:0 30px 80px rgba(0,0,0,.42);position:relative;animation:popIn .3s ease}
+.modal-close{position:absolute;top:16px;right:16px;z-index:5;width:40px;height:40px;border:none;border-radius:50%;background:rgba(255,255,255,.18);color:#fff;cursor:pointer;padding:9px}
+
+.modal-hero{background:linear-gradient(120deg,#1846c9 0%,#12235a 100%);padding:34px 40px;display:grid;grid-template-columns:1.2fr .8fr;gap:16px;align-items:center}
+.modal-hero-title{font-size:clamp(34px,4.4vw,48px);font-weight:800;line-height:1.02;letter-spacing:-.02em;color:#fff}
+.modal-hero-title span{color:#ffd23c}
+.modal-hero-title-en{font-size:clamp(20px,2.6vw,26px);font-weight:800;color:#fff;letter-spacing:-.01em;margin-top:4px}
+.modal-hero-rule{width:44px;height:3px;background:rgba(255,255,255,.4);border-radius:2px;margin:16px 0 12px}
+.modal-hero-ko{font-size:17px;font-weight:700;color:#fff}
+.modal-hero-en{font-size:14px;color:#c3d0ee;margin-top:3px}
+.modal-hero-badge-box{display:flex;align-items:center;justify-content:center}
+.modal-hero-badge{width:128px;height:128px;border-radius:50%;background:rgba(255,255,255,.1);border:3px solid rgba(255,255,255,.35);display:grid;place-items:center;text-align:center;flex:none;position:relative}
+.modal-hero-badge-tab{position:absolute;top:-9px;width:16px;height:14px;border-radius:4px;background:#fff}
+.modal-hero-badge-n{font-size:44px;font-weight:800;color:#fff;line-height:1}
+.modal-hero-badge-sec{font-size:14px;font-weight:800;letter-spacing:.22em;color:#ffd23c;margin-top:-2px}
+
+.modal-chips{padding:20px 40px;border-bottom:1px solid #eef1f6;display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.modal-chip{display:flex;align-items:center;gap:13px}
+.modal-chip-icon{width:44px;height:44px;border-radius:12px;background:#eef3fd;color:#1846c9;padding:11px;flex:none}
+.modal-chip-ko{font-size:15px;font-weight:800;color:#12235a;line-height:1.2}
+.modal-chip-en{font-size:12px;color:#8794a8;margin-top:2px}
+
+.modal-body{padding:30px 40px 38px}
+.modal-form-head{display:flex;align-items:center;gap:14px;justify-content:center;text-align:center}
+.modal-form-head-icon{width:52px;height:52px;border-radius:14px;background:#1846c9;color:#fff;padding:13px;flex:none}
+.modal-form-ko{font-size:24px;font-weight:800;color:#12235a;letter-spacing:-.01em}
+.modal-form-en{font-size:16px;font-weight:700;color:#1846c9}
+.modal-divider{height:1px;background:#e6ecf5;margin:24px 0 28px}
+
+.apply-form[hidden]{display:none}
+.field-label{display:flex;align-items:center;gap:10px}
+.field-n{width:26px;height:26px;border-radius:7px;background:#1846c9;color:#fff;display:grid;place-items:center;font-size:14px;font-weight:800;flex:none}
+.field-text{font-size:17px;font-weight:800;color:#20304a}
+.req{color:#e0342a}
+.field-input{width:100%;margin:11px 0 22px;padding:16px 18px;font-size:16px;font-family:'Pretendard',sans-serif;color:#16233d;background:#f7f9fc;border:1.5px solid #dde5f3;border-radius:12px}
+.field-input-tight{margin:11px 0 6px}
+.field-input::placeholder{color:#9aa6b8}
+.field-input:focus{outline:none;border-color:#1846c9;box-shadow:0 0 0 4px rgba(24,70,201,.12)}
+.field-error-slot{min-height:22px;padding:4px 2px 0}
+.field-error{font-size:13.5px;color:#e0342a;font-weight:600}
+/* 봇만 채우는 허니팟. 화면에서 완전히 감추되 display:none 은 피한다. */
+.apply-honey{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.apply-submit{width:100%;margin-top:12px;border:none;cursor:pointer;display:flex;align-items:center;justify-content:center;gap:18px;background:linear-gradient(90deg,#1846c9,#1236a3);color:#fff;border-radius:14px;padding:20px;font-family:'Pretendard',sans-serif;box-shadow:0 14px 30px rgba(24,70,201,.3)}
+.apply-submit:disabled{cursor:progress;opacity:.72;box-shadow:none}
+.apply-submit-left{display:flex;align-items:center;gap:12px}
+.apply-submit-icon{width:25px;height:25px;display:block}
+.apply-submit-ko{font-size:21px;font-weight:800}
+.apply-submit-sep{width:1px;height:26px;background:rgba(255,255,255,.35)}
+.apply-submit-en{font-size:21px;font-weight:800;color:#ffd23c;letter-spacing:.02em}
+
+.apply-done{background:#f1faf4;border:1px solid #cdebd8;border-radius:16px;padding:28px 26px;animation:popIn .35s ease}
+.apply-done[hidden]{display:none}
+.apply-done-row{display:flex;align-items:center;gap:16px}
+.apply-done-icon{width:54px;height:54px;border-radius:50%;background:#12a150;color:#fff;padding:14px;flex:none}
+.apply-done-icon2{width:50px;height:50px;border-radius:50%;background:#e3f4ea;color:#12a150;padding:13px;flex:none}
+.apply-done-ko{font-size:21px;font-weight:800;color:#0e8a44}
+.apply-done-en{font-size:14.5px;color:#3a5a48;margin-top:2px}
+.apply-done-divider{border-top:1px dashed #c4e2cf;margin:20px 0}
+.apply-done-ko2{font-size:18px;font-weight:800;color:#20304a}
+.apply-done-en2{font-size:14.5px;color:#4a5c6e;margin-top:2px}
+.apply-done-en2 span{color:#0e8a44;font-weight:800}
+.apply-done-close{width:100%;margin-top:22px;border:none;cursor:pointer;background:#12235a;color:#fff;border-radius:12px;padding:16px;font-family:'Pretendard',sans-serif;font-size:16px;font-weight:800}
+
+/* ---------- responsive (shared) ---------- */
+@media (max-width:900px){
+  .header-inner{padding:14px 20px;flex-wrap:nowrap;gap:12px}
+  .brand-mark{width:42px;height:42px;border-radius:11px;padding:10px}
+  .brand-ko{font-size:17px}
+  .brand-en{font-size:9px;letter-spacing:.1em}
+
+  /* 데스크톱 연락처 블록은 드로어 안의 사본(.nav-contact)으로 대체된다 */
+  .header-contact{display:none}
+  .header-actions{display:flex;align-items:center;gap:6px;margin-left:auto}
+
+  .nav-call{width:44px;height:44px;border-radius:12px;background:#eef3fd;color:#1846c9;padding:11px;flex:none;display:block}
+  .nav-toggle{width:44px;height:44px;border:none;background:transparent;color:#12235a;cursor:pointer;display:grid;place-items:center;flex:none}
+  .nav-toggle-bars{position:relative;width:22px;height:16px;display:block}
+  .nav-toggle-bars span{position:absolute;left:0;width:100%;height:2px;border-radius:2px;background:currentColor;transition:transform .25s ease,opacity .2s ease}
+  .nav-toggle-bars span:nth-child(1){top:0}
+  .nav-toggle-bars span:nth-child(2){top:7px}
+  .nav-toggle-bars span:nth-child(3){top:14px}
+  .nav-toggle.is-open .nav-toggle-bars span:nth-child(1){transform:translateY(7px) rotate(45deg)}
+  .nav-toggle.is-open .nav-toggle-bars span:nth-child(2){opacity:0}
+  .nav-toggle.is-open .nav-toggle-bars span:nth-child(3){transform:translateY(-7px) rotate(-45deg)}
+
+  /* 우측 드로어 */
+  .site-nav{position:fixed;top:0;right:0;bottom:0;width:min(320px,86vw);z-index:1200;background:#fff;box-shadow:-18px 0 48px rgba(10,20,45,.18);flex-direction:column;flex-wrap:nowrap;align-items:stretch;gap:0;padding:18px 24px 32px;overflow-y:auto;transform:translateX(100%);transition:transform .28s ease;-webkit-overflow-scrolling:touch}
+  .site-nav.is-open{transform:none}
+  .site-nav a{text-align:left;padding:16px 2px;border-bottom:1px solid #eef1f6}
+  .nav-ko{font-size:17px}
+  .nav-en{margin-top:2px}
+
+  /* 드로어 상단: 로고 + 닫기 */
+  .nav-head{display:flex;align-items:center;justify-content:space-between;gap:12px;padding-bottom:16px;border-bottom:1px solid #eef1f6}
+  .nav-head .brand{padding:0;border-bottom:none;gap:10px}
+  .nav-head .brand-mark{width:38px;height:38px;border-radius:10px;padding:9px}
+  .nav-head .brand-ko{font-size:14px}
+  .nav-head .brand-en{font-size:7.5px;letter-spacing:.09em}
+  .nav-close{width:40px;height:40px;flex:none;border:none;border-radius:12px;background:#f2f5fa;color:#42506b;padding:11px;cursor:pointer}
+
+  .nav-backdrop{display:block;position:fixed;inset:0;z-index:1190;background:rgba(10,20,45,.5);backdrop-filter:blur(2px)}
+  .nav-backdrop[hidden]{display:none}
+
+  .nav-contact{display:block;margin-top:26px;text-align:left}
+  /* .site-nav a 의 목록 스타일(패딩·구분선)이 전화 링크에 적용되지 않게 한다 */
+  .nav-contact .header-tel{justify-content:flex-start;font-size:22px;padding:0;border-bottom:none}
+  .nav-contact .header-hours,.nav-contact .header-today{margin-top:6px;line-height:1.5}
+
+  .footer-inner{padding-left:20px;padding-right:20px}
+
+  .modal-overlay{padding:16px 12px}
+  .modal{border-radius:18px}
+  .modal-hero,.modal-chips,.modal-body{padding-left:24px;padding-right:24px}
+  .modal-hero{grid-template-columns:1fr;padding-top:28px;padding-bottom:28px}
+  .modal-hero-badge-box{display:none}
+  .modal-chips{grid-template-columns:1fr}
+  .modal-body{padding-top:24px;padding-bottom:28px}
+  .apply-submit{flex-direction:column;gap:6px;padding:16px}
+  .apply-submit-sep{display:none}
+  .apply-submit-ko,.apply-submit-en{font-size:18px}
+}
+
+@media (max-width:560px){
+  .header-inner{padding:12px 16px}
+  .brand-ko{font-size:15.5px}
+  .brand-en{font-size:8px}
+  .footer-inner{padding-left:16px;padding-right:16px;gap:22px}
+  .modal-hero,.modal-chips,.modal-body{padding-left:18px;padding-right:18px}
+  .modal-hero-title{font-size:32px}
+  .modal-hero-title-en{font-size:19px}
+  .field-text{font-size:15.5px}
+  .field-input{font-size:16px;padding:14px 16px} /* 16px 미만이면 iOS 가 확대한다 */
+}

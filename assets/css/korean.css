@@ -1,0 +1,107 @@
+/* 한국인 기사 모집(korean.html) 전용 */
+
+.kr-h2{font-size:34px;font-weight:800;color:#12235a;letter-spacing:-.01em}
+.kr-h2 span{color:#1846c9}
+
+/* ---------- hero ---------- */
+.kr-hero{background:linear-gradient(125deg,#eaf1fd 0%,#f6f9fe 60%)}
+.kr-hero-inner{padding:60px 48px 56px}
+.kr-hero-grid{display:grid;grid-template-columns:1.05fr 1fr;gap:48px;align-items:center}
+.kr-hero-badge{display:inline-block;background:#1846c9;color:#fff;padding:8px 16px;border-radius:999px;font-size:14px;font-weight:700}
+.kr-hero-title{font-size:clamp(46px,4.4vw,72px);line-height:1.04;font-weight:800;color:#12235a;margin-top:20px;letter-spacing:-.03em}
+.kr-hero-sub{font-size:clamp(24px,2.4vw,32px);line-height:1.28;color:#1846c9;font-weight:800;margin-top:16px;letter-spacing:-.01em}
+.kr-hero-desc{font-size:18px;color:#42506b;margin-top:16px;line-height:1.6;font-weight:600}
+.kr-hero-cta{cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:20px;background:linear-gradient(90deg,#1846c9,#12235a);color:#fff;border-radius:18px;padding:22px 28px;margin-top:30px;box-shadow:0 16px 38px rgba(24,70,201,.3);max-width:440px}
+.kr-hero-cta-left{display:flex;align-items:center;gap:18px}
+.kr-hero-cta-icon{width:58px;height:58px;border-radius:15px;background:rgba(255,255,255,.16);color:#fff;padding:15px;flex:none}
+.kr-hero-cta-note{font-size:15px;font-weight:700;opacity:.9}
+.kr-hero-cta-title{font-size:32px;font-weight:800;letter-spacing:-.01em;line-height:1.1}
+.kr-hero-cta-arrow{width:48px;height:48px;border-radius:50%;background:#fff;color:#1846c9;padding:13px;flex:none}
+.kr-hero-photo{aspect-ratio:16/11;border-radius:22px;overflow:hidden;border:1px solid #cfdaee;box-shadow:0 18px 46px rgba(18,35,90,.12)}
+.kr-hero-photo img{width:100%;height:100%;object-fit:cover}
+
+/* ---------- why us ---------- */
+.kr-why-wrap{padding:64px 48px 8px;text-align:center}
+.kr-why{display:grid;grid-template-columns:repeat(5,1fr);gap:18px;margin-top:36px;text-align:center}
+.kr-why-card{border:1px solid #eef1f6;border-radius:18px;padding:34px 18px 30px;background:#fff;box-shadow:0 6px 18px rgba(18,35,90,.04)}
+.kr-why-icon{width:64px;height:64px;border-radius:18px;background:#eef3fd;color:#1846c9;padding:16px;margin:0 auto 18px}
+.kr-why-ko{font-size:17px;font-weight:800;color:#20304a;line-height:1.32;min-height:44px;display:flex;align-items:center;justify-content:center}
+.kr-why-d{font-size:13.5px;color:#8794a8;margin-top:12px;line-height:1.55}
+
+/* ---------- recommend ---------- */
+.kr-people-wrap{padding:56px 48px 8px;width:100%;text-align:center}
+.kr-people{display:grid;grid-template-columns:repeat(4,1fr);gap:22px;margin-top:36px;text-align:center}
+.kr-person-photo{aspect-ratio:1/1;border-radius:18px;overflow:hidden;border:1px solid #e6eef9}
+.kr-person-photo img{width:100%;height:100%;object-fit:cover}
+.kr-person-ko{font-size:19px;font-weight:800;color:#20304a;margin-top:18px}
+.kr-person-d{font-size:14px;color:#6b7789;margin-top:8px;line-height:1.6}
+
+/* ---------- income ---------- */
+.kr-income-wrap{padding:56px 48px 8px}
+.kr-income{background:#f4f8fd;border:1px solid #e6eef9;border-radius:22px;padding:44px 48px;display:grid;grid-template-columns:1.4fr 1fr;gap:36px;align-items:center}
+.kr-income-head{display:flex;align-items:center;gap:16px}
+.kr-income-icon{width:60px;height:60px;border-radius:16px;background:#fff2ee;color:#e0342a;padding:15px;flex:none}
+.kr-income-ko{font-size:24px;font-weight:800;color:#12235a}
+.kr-income-en{font-size:15px;color:#8794a8;font-weight:600}
+.kr-income-amount{font-size:clamp(30px,3vw,42px);font-weight:800;color:#12235a;margin-top:20px;letter-spacing:-.01em}
+.kr-income-amount span{color:#e0342a}
+.kr-income-note{font-size:14px;color:#6b7789;margin-top:10px}
+.kr-bars{display:flex;align-items:flex-end;justify-content:center;gap:12px;height:170px}
+.kr-bar{width:34px;border-radius:8px 8px 0 0}
+
+/* ---------- bottom CTA ---------- */
+.kr-cta-wrap{padding:56px 48px 60px}
+.kr-cta{background:linear-gradient(100deg,#1846c9 0%,#12235a 100%);border-radius:22px;padding:44px 48px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.kr-cta-title{font-size:clamp(26px,2.6vw,34px);font-weight:800;color:#fff;letter-spacing:-.01em;line-height:1.25}
+.kr-cta-title span{color:#ffd23c}
+.kr-cta-btn{cursor:pointer;display:inline-flex;align-items:center;gap:16px;background:#fae100;color:#3a2e00;border-radius:14px;padding:18px 30px;margin-top:24px;box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.kr-cta-btn-icon{width:30px;height:30px;display:block;flex:none}
+.kr-cta-btn-text{font-size:26px;font-weight:800;letter-spacing:-.01em}
+.kr-cta-btn-arrow{width:34px;height:34px;border-radius:50%;background:#3a2e00;color:#fae100;padding:9px;display:block;flex:none}
+.kr-cta-tel{border-left:1px solid rgba(255,255,255,.22);padding-left:32px}
+.kr-cta-tel-label{display:flex;align-items:center;gap:12px;color:#9fc0ff;font-size:15px;font-weight:700}
+.kr-cta-tel-icon{width:22px;height:22px;display:block}
+.kr-cta-tel-nums{font-size:32px;font-weight:800;color:#fff;letter-spacing:-.01em;margin-top:8px;line-height:1.15}
+.kr-cta-tel-hours{font-size:13.5px;color:#c3d0ee;margin-top:6px}
+
+/* ---------- responsive ---------- */
+@media (max-width:1100px){
+  .kr-why{grid-template-columns:repeat(3,1fr)}
+  .kr-people{grid-template-columns:repeat(2,1fr)}
+}
+@media (max-width:900px){
+  .kr-hero-inner,.kr-why-wrap,.kr-people-wrap,.kr-income-wrap,.kr-cta-wrap{padding-left:20px;padding-right:20px}
+  .kr-hero-inner{padding-top:40px;padding-bottom:40px}
+  .kr-hero-grid{grid-template-columns:1fr;gap:32px}
+  .kr-hero-title{font-size:clamp(36px,8vw,52px)}
+  .kr-hero-sub{font-size:clamp(20px,4.6vw,26px)}
+  .kr-hero-cta{max-width:none}
+  .kr-why-wrap,.kr-people-wrap,.kr-income-wrap{padding-top:44px}
+  .kr-income{grid-template-columns:1fr;padding:28px}
+  .kr-bars{height:130px}
+  .kr-cta-wrap{padding-top:44px;padding-bottom:44px}
+  .kr-cta{grid-template-columns:1fr;padding:28px}
+  .kr-cta-tel{border-left:none;border-top:1px solid rgba(255,255,255,.22);padding-left:0;padding-top:24px}
+}
+@media (max-width:560px){
+  .kr-hero-inner,.kr-why-wrap,.kr-people-wrap,.kr-income-wrap,.kr-cta-wrap{padding-left:16px;padding-right:16px}
+  .kr-h2{font-size:24px}
+  .kr-why{grid-template-columns:1fr 1fr;gap:12px}
+  .kr-why-card{padding:24px 12px 20px}
+  .kr-why-icon{width:52px;height:52px;border-radius:15px;padding:13px;margin-bottom:14px}
+  .kr-why-ko{font-size:15px;min-height:40px}
+  .kr-why-d{font-size:12.5px}
+  .kr-people{grid-template-columns:1fr;gap:26px}
+
+  .kr-hero-cta{padding:18px 20px}
+  .kr-hero-cta-icon{width:48px;height:48px;padding:12px}
+  .kr-hero-cta-title{font-size:26px}
+  .kr-hero-cta-arrow{width:40px;height:40px;padding:11px}
+
+  .kr-income{padding:22px}
+  .kr-income-amount{font-size:26px}
+  .kr-cta{padding:22px}
+  .kr-cta-btn{padding:16px 20px;gap:12px;width:100%;justify-content:center}
+  .kr-cta-btn-text{font-size:22px}
+  .kr-cta-tel-nums{font-size:26px}
+}
