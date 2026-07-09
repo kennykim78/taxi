@@ -46,6 +46,8 @@
 .cs-call-nums{display:flex;flex-direction:column;gap:2px;font-size:clamp(26px,2.6vw,38px);font-weight:800;letter-spacing:.01em;line-height:1.15}
 .cs-sns{display:flex;flex-direction:column;gap:14px;justify-content:center}
 .cs-sns-row{display:flex;align-items:center;gap:16px;background:#fff;border:1px solid #e0e8f4;border-radius:14px;padding:16px 20px}
+.cs-sns-row:is(a){cursor:pointer;transition:all .2s ease}
+.cs-sns-row:is(a):hover{background:#f8fafc;border-color:#1877f2;box-shadow:0 4px 12px rgba(24,119,242,.12)}
 .cs-sns-badge{width:44px;height:44px;border-radius:50%;display:grid;place-items:center;font-weight:800;flex:none}
 .cs-fb{background:#1877f2;color:#fff;font-size:22px}
 .cs-sns-label{font-size:16px;font-weight:600;color:#42506b;min-width:96px}
