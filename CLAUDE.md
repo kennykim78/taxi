@@ -39,7 +39,7 @@ MCP 서버 `claude_design`(user 스코프, `https://api.anthropic.com/v1/design/
 
 30초 지원 모달은 FormSubmit AJAX 엔드포인트로 메일을 보낸다.
 엔드포인트는 `assets/js/main.js` 상단 `APPLY_ENDPOINT` 한 곳에만 있다.
-현재는 테스트용 `kenny@rza.co.kr`. **운영 전환 시 `phil3410@naver.com` 으로 되돌릴 것.**
+현재 수신 주소는 운영용 `phil3410@naver.com`.
 
 - **`file://` 로 열면 항상 실패한다.** FormSubmit 은 `Referer` 헤더를 요구하는데 file 스킴은 보내지 않는다.
   ("Make sure you open this page through a web server" 응답) 폼 테스트는 반드시 `npx serve .` 로 띄운다.

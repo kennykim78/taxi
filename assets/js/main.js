@@ -3,8 +3,7 @@
 
   // FormSubmit AJAX 엔드포인트. 최초 1회는 수신함으로 온 확인 메일을 눌러 활성화해야 한다.
   // AJAX 제출에서는 reCAPTCHA 를 쓸 수 없으므로 _captcha:false + 허니팟(_honey)으로 막는다.
-  // TODO: 테스트용 수신 주소. 운영 전환 시 phil3410@naver.com 으로 되돌린다.
-  var APPLY_ENDPOINT = 'https://formsubmit.co/ajax/kenny@rza.co.kr';
+  var APPLY_ENDPOINT = 'https://formsubmit.co/ajax/phil3410@naver.com';
 
   // 지원 모달은 4개 페이지가 공유하므로 마크업을 여기서 한 번만 정의해 주입한다.
   // 필요한 아이콘(ic-close, ic-match, ic-headset, ic-form, ic-send, ic-check)은
