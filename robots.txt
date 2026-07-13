@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+Disallow: /companies.html
+
+Sitemap: https://taxijob.kr/sitemap.xml
