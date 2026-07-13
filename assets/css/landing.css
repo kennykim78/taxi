@@ -32,7 +32,6 @@
 .cta-apply-title{font-size:34px;font-weight:800;letter-spacing:-.01em}
 .cta-apply-sub{font-size:14px;opacity:.92;margin-top:3px}
 .cta-apply-arrow{width:56px;height:56px;border-radius:50%;background:#fff;color:#e0342a;padding:15px;flex:none}
-.consult-row-bottom{margin-top:18px;padding-top:0}
 
 /* ---------- features ---------- */
 .features-wrap{padding:52px 48px}
@@ -113,6 +112,21 @@
 .steps-banner{margin-top:24px;background:linear-gradient(90deg,#1846c9,#12235a);color:#fff;border-radius:18px;padding:24px 28px;text-align:center;font-size:22px;font-weight:800}
 .steps-banner span{color:#ffd23c}
 
+/* ---------- bottom CTA (korean.css 와 동일 규칙) ---------- */
+.kr-cta-wrap{padding:56px 48px 60px}
+.kr-cta{background:linear-gradient(100deg,#1846c9 0%,#12235a 100%);border-radius:22px;padding:44px 48px;display:grid;grid-template-columns:1.3fr 1fr;gap:32px;align-items:center}
+.kr-cta-title{font-size:clamp(26px,2.6vw,34px);font-weight:800;color:#fff;letter-spacing:-.01em;line-height:1.25}
+.kr-cta-title span{color:#ffd23c}
+.kr-cta-btn{cursor:pointer;display:inline-flex;align-items:center;gap:16px;background:#fae100;color:#3a2e00;border-radius:14px;padding:18px 30px;margin-top:24px;box-shadow:0 12px 28px rgba(0,0,0,.22)}
+.kr-cta-btn-icon{width:30px;height:30px;display:block;flex:none}
+.kr-cta-btn-text{font-size:26px;font-weight:800;letter-spacing:-.01em}
+.kr-cta-btn-arrow{width:34px;height:34px;border-radius:50%;background:#3a2e00;color:#fae100;padding:9px;display:block;flex:none}
+.kr-cta-tel{border-left:1px solid rgba(255,255,255,.22);padding-left:32px}
+.kr-cta-tel-label{display:flex;align-items:center;gap:12px;color:#9fc0ff;font-size:15px;font-weight:700}
+.kr-cta-tel-icon{width:22px;height:22px;display:block}
+.kr-cta-tel-nums{font-size:32px;font-weight:800;color:#fff;letter-spacing:-.01em;margin-top:8px;line-height:1.15}
+.kr-cta-tel-hours{font-size:13.5px;color:#c3d0ee;margin-top:6px}
+
 /* ---------- responsive ---------- */
 @media (max-width:1100px){
   .hero{height:auto}
@@ -120,7 +134,10 @@
   .idphoto-stamp{right:-6px;top:-16px}
 }
 @media (max-width:900px){
-  .hero-inner,.cta-wrap,.features-wrap,.idphoto-wrap,.foreign-wrap,.companies-wrap,.steps-wrap{padding-left:20px;padding-right:20px}
+  .hero-inner,.cta-wrap,.features-wrap,.idphoto-wrap,.foreign-wrap,.companies-wrap,.steps-wrap,.kr-cta-wrap{padding-left:20px;padding-right:20px}
+  .kr-cta-wrap{padding-top:44px;padding-bottom:44px}
+  .kr-cta{grid-template-columns:1fr;padding:28px}
+  .kr-cta-tel{border-left:none;border-top:1px solid rgba(255,255,255,.22);padding-left:0;padding-top:24px}
   .hero-inner{padding-top:36px;padding-bottom:32px}
   .hero-grid{gap:32px}
   .hero-title{font-size:clamp(32px,7.4vw,46px)}
@@ -139,7 +156,11 @@
   .steps-banner{font-size:18px;padding:20px}
 }
 @media (max-width:560px){
-  .hero-inner,.cta-wrap,.features-wrap,.idphoto-wrap,.foreign-wrap,.companies-wrap,.steps-wrap{padding-left:16px;padding-right:16px}
+  .hero-inner,.cta-wrap,.features-wrap,.idphoto-wrap,.foreign-wrap,.companies-wrap,.steps-wrap,.kr-cta-wrap{padding-left:16px;padding-right:16px}
+  .kr-cta{padding:22px}
+  .kr-cta-btn{padding:16px 20px;gap:12px;width:100%;justify-content:center}
+  .kr-cta-btn-text{font-size:22px}
+  .kr-cta-tel-nums{font-size:26px}
   .hero-title{font-size:30px}
   .hero-sub-en{font-size:16px}
   .hero-income{padding:14px 16px;gap:12px}
